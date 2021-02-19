@@ -613,6 +613,7 @@ class GooglePlayAPI(object):
         params = {'ot': str(offerType),
                   'doc': packageName,
                   'vc': str(versionCode)}
+        # To fix protobuf message parsing error
         # self.log(packageName)
         response = requests.post(PURCHASE_URL, headers=headers,
                                  params=params, verify=ssl_verify,
