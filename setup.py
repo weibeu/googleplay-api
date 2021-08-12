@@ -10,7 +10,7 @@ setup(name='gpapidl',
       packages=['gpapidl'],
       package_data={'gpapidl': ['device.properties']},
       install_requires=[
-            'cryptography==2.9',
+            'cryptography==3.4.7',
             'protobuf==3.14.0',
             'requests==2.23.0'
       ])
